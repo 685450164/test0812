@@ -30,13 +30,7 @@
 
         </tbody>
     </table>
-    <script>
-        try {
-            await fetch('https://sports.tms.gov.tw/opendata/sports_tms.json');
-        } catch(err) {
-            alert(err); // Failed to fetch
-        }
-        
+    <script>        
         $(document).ready(function () {
             $('#example').DataTable({
                 ajax: {
