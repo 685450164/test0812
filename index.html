@@ -31,6 +31,12 @@
         </tbody>
     </table>
     <script>
+                try {
+            fetch('https://sports.tms.gov.tw/opendata/sports_tms.json')
+        } catch (err) {
+            console.error(err);
+        }
+        
         $(document).ready(function () {
             $('#example').DataTable({
                 ajax: {
