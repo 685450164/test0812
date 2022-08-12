@@ -32,9 +32,9 @@
     </table>
     <script>
         try {
-            fetch('https://sports.tms.gov.tw/opendata/sports_tms.json')
-        } catch (err) {
-            console.error(err);
+            await fetch('https://sports.tms.gov.tw/opendata/sports_tms.json');
+        } catch(err) {
+            alert(err); // Failed to fetch
         }
         
         $(document).ready(function () {
